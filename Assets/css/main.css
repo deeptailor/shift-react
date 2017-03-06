@@ -1,0 +1,130 @@
+body{
+  background: url("https://res.cloudinary.com/deeptailor/image/upload/v1486078008/shift-background_s6szcg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family:'PT Sans', sans-serif;
+}
+
+.content{
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*navigation bar begin*/
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo{
+  background: url("https://res.cloudinary.com/deeptailor/image/upload/c_scale,w_220/v1486096118/logo_ojnlcj.svg") no-repeat top left;
+  width: 99px;
+  height: 30px;
+}
+
+.menu{
+  color: white;
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu > li{
+  padding: 5px;
+}
+
+.menu > li:nth-child(1):hover{
+  border: none;
+}
+
+.menu > li:hover{
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+/*navigation bar end*/
+
+h1{
+  font-size: 60px;
+  color: white;
+  font-weight: 700;
+  position: fixed;
+  top: 30%;
+}
+
+h2{
+  font-size: 22px;
+  color: white;
+  position: fixed;
+  top: 40%;
+}
+
+/*search bar begin*/
+
+.searchbar-wrapper{
+  display: flex;
+  background: white;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  position: fixed;
+  margin: auto auto;
+}
+
+.searchbar{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  margin-left: 5px;
+  min-width: 400px;
+}
+
+.searchResults{
+  position: absolute;
+  top: 40px;
+  max-height: 200px;
+  max-width: 100%;
+  min-width: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 0 0 5px 5px;
+}
+
+.invisible{
+  display: none;
+}
+
+.searchResults > li{
+  padding: 10px;
+}
+
+.searchResults > li:hover{
+  background: rgb(225,78,78);
+  color: white;
+  cursor: pointer;
+}
+
+.selected{
+  background: rgb(225,78,78);
+}
+
+/*searchbar end*/
